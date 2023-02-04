@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz Game</string>
+    <string name="account"><i><b>Dont have an account yet? </b></i> Signup</string>
+    <string name="forgot_password">Forgot password</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:orientation="vertical"
+        android:background="@drawable/login_shape"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <EditText
+        android:id="@+id/edittextuseremail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+
+        android:textSize="20sp"
+        android:background="@drawable/edit_text"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:hint="username" />
+
+
+        <EditText
+            android:id="@+id/edittextuserpassword"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:inputType="textPassword" />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@color/grey"
+            android:text="LOGIN"
+            android:id="@+id/login"
+            android:padding="6dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+           android:textSize="25dp" >
+
+        </Button>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/darkorange">
+
+        </View>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+
+        </TextView>
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signinwithgoogle"
+            android:layout_width="250dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account"
+            android:id="@+id/signup"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/forgotpassword"
+            android:text="@string/forgot_password"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+
+        </TextView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
